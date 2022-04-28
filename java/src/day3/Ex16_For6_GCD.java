@@ -18,6 +18,21 @@ public class Ex16_For6_GCD {
 		 * 반복문 종료 후 : gcd를 출력
 		 * */
 		
+		int num1 =12, num2 = 18, gcd = 1;
+		for(int i = 1; i <= num1 ; i++) {
+			if(num1 % i == 0 && num2 % i ==0) {
+				gcd = i;
+		}
+		
+		}
+		System.out.println(num1 + "과" + num2 + "의 최대공약수 : " + gcd);
+	}
+}
+
+	
+	
+	
+		
 		/* 같은 타입의 변수를 여러개 선언하는 경우 ,를 통해서 한줄로 선언할 수 있다.
 		 * 타입변수명1; 
 		 * 타입변수명2
@@ -26,36 +41,8 @@ public class Ex16_For6_GCD {
 		 * i는 반복문 밖에서 선언되어 반복문 이후에도 사용 가능
 		 * j는 반목에 안에 선언되어 반목문엑서만 사용가능*/
 		
-		Scanner scan = new Scanner(System.in);
-		
-		System.out.print("두 정수를 입력하세요. : ");
-		int a = scan.nextInt();
-		int b = scan.nextInt();
 		
 		
-		int max, min;
-		if (a>b) {
-			max = a;
-			min = b;
-		}
-		else {
-			max =b;
-			min =a;
-		}
-			
-		int gcd= 1;
-		int i =1;
-
-		for( i = 1 ; i <= min ; i++) {
-			if (max % i==0 && min % i==0) {
-				gcd = i;
-			}	
-		}
-		System.out.println("최대 공약수는" + gcd);
-	}
-		
-}
-
 		
 	
 
