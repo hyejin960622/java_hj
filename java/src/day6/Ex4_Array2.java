@@ -22,7 +22,9 @@ public class Ex4_Array2 {
 		System.out.println(arr[4]);
 		
 		System.out.println("--------------");
+		
 		for(int i = 0; i <=4;i++) {
+			arr[i] = i+1;
 			System.out.println(arr[i]);
 		}
 		System.out.println("--------------");
