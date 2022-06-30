@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>말줄임 예제</title>
+	<style>
+		.box1{
+			width: 300px; height: 50px; line-height: 50px;
+			white-space: nowrap; overflow: hidden;
+			text-overflow: ellipsis;
+			border: 1px solid black;
+			margin-bottom: 10px;
+		}
+		/* 크롬에서 말줄임 */
+		.box2{
+			width: 300px; height: 150px; line-height: 50px;
+			display: -webkit-box; 
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 3;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">윤석열 대통령 부부가 27일(현지 시각) 오후 9시 30분쯤 북대서양조약기구(나토) 정상회의 참석을 위해 스페인 첫 순방 길에 올랐다.</div>
+	<div class="box2">윤석열 대통령 부부가 27일(현지 시각) 오후 9시 30분쯤 북대서양조약기구(나토) 정상회의 참석을 위해 스페인 첫 순방 길에 올랐다.</div>
+</body>
+</html>
