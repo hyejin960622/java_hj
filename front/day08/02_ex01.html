@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		@keyframes box{
+			0%{
+				left: 0px;
+			}
+			50%{
+				left: 300px;
+			}
+			100%{
+				left: 0px;
+			}
+		}
+		
+		/*강사
+
+		@keyframes movebox{
+			0%{margin-left: 0;}
+			50%{margin-left: 300px; background: blue;}
+			100%{margin-left: 0;}
+		}
+		.box{
+			width: 100px; height: 100px;
+			background: red;
+			animation: movebox 3s infinite;
+			position: absolute;
+			color: white;
+		}
+		*/
+
+		.box{
+			position:absolute;
+			width:100px;
+			height:50px;
+			border: 2px solid black;
+			animation-name: box;
+			animation-iteration-count: 1;
+			animation-duration: 3s;
+			animation-timing-function: linear;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">123</div>
+</body>
+</html>
