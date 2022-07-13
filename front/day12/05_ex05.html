@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.container1{
+			width: 300px; height: 150px;
+			box-sizing: border-box;
+			border: 1px solid black;
+		}
+		.row1{
+			height: calc((150px - 2px) - 3);
+			background-color: yellow;
+		}
+		.row1:nth-child(2n){
+			background-color: beige;
+		}
+		.box1{
+			height: 100%; width: calc((300px -2px) / 3);
+			background-color: red;
+			float: left;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="container1">
+		<div class="row1">
+			<div class="box1"></div>
+			<div class="box1"></div>
+			<div class="box1"></div>
+		</div>
+		<div class="row1">
+			<div class="box1"></div>
+			<div class="box1"></div>
+			<div class="box1"></div>
+		</div>
+		<div class="row1">
+			<div class="box1"></div>
+			<div class="box1"></div>
+			<div class="box1"></div>
+		</div>
+	</div>
+</body>
+</html>
