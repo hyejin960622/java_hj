@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#box_search{
+			border: 2px solid green;
+			width: 500px; height: 50px;
+			padding: 10px;
+			position: relative;
+		}
+		#input_search{
+			height: 100%; box-sizing: border-box; 
+			width: 350px;
+			border: none;
+		}
+		#input_search:focus{
+			outline: 0;
+		}
+		#btn_submit{
+			width: 74px; height: 74px; background-color: green;
+			vertical-align: top;
+			position: absolute; top: 0; right: 0; padding: 0;
+			margin-top: -2px; margin-right: -2px;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div id="box_search">
+		<input type="text" id="input_search">
+		<button id="btn_submit">버튼</button>
+	</div>
+</body>
+</html>
